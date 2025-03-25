@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Румтибет</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900">
+
+    <!-- Главный экран -->
+    <section class="relative h-screen bg-cover bg-center" 
+        style="background-image: url('./assets/mountains.jpeg');">
+        
+        <!-- Навигация -->
+        <nav class="absolute top-0 left-0 w-full flex justify-between items-center p-6">
+            <div class="text-white text-lg font-bold flex items-center space-x-2">
+                <img src="./assets/logo.png" alt="Лого" class="h-10">  
+            </div>
+            <ul class="hidden sm:flex space-x-6 text-white ">
+                <li><a href="#" class="hover:underline">Главная</a></li>
+                <li><a href="#" class="hover:underline">Про гида</a></li>
+                <li><a href="#" class="hover:underline">Программа тура</a></li>
+                <li><a href="#" class="hover:underline">Стоимость</a></li>
+                <li><a href="#" class="hover:underline">Блог</a></li>
+                <li><a href="#" class="hover:underline">Контакты</a></li>
+            </ul>
+            <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Консультация</a>
+        </nav>
+
+        <!-- Заголовок -->
+        <div class="flex flex-col justify-center items-center h-full text-center px-6">
+            <h1 class="text-2xl sm:text-5xl font-bold text-white drop-shadow-lg">
+                Насладись прогулкой в горах <br> с командой единомышленников
+            </h1>
+        </div>
+
+        <!-- Форма -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 
+                    bg-gray-800/50 backdrop-blur-md p-6 rounded-lg max-w-4xl w-full">
+            <form class="grid grid-cols-4 gap-4">
+                <!-- Локация -->
+                <div class="col-span-1 bg-white p-3 rounded-md">
+                    <label class="block text-gray-600 text-sm">Локация для тура</label>
+                    <select class="w-full bg-transparent outline-none">
+                        <option>Выберите из списка</option>
+                    </select>
+                </div>
+                
+                <!-- Дата -->
+                <div class="col-span-1 bg-white p-3 rounded-md">
+                    <label class="block text-gray-600 text-sm">Дата похода</label>
+                    <input type="date" class="w-full bg-transparent outline-none">
+                </div>
+                
+                <!-- Участники -->
+                <div class="col-span-1 bg-white p-3 rounded-md">
+                    <label class="block text-gray-600 text-sm">Участники</label>
+                    <select class="w-full bg-transparent outline-none">
+                        <option>Минимум 4 человека</option>
+                    </select>
+                </div>
+
+                <!-- Кнопка -->
+                <button class="col-span-1 bg-white text-gray-900 font-bold py-3 px-6 rounded-md hover:bg-gray-300">
+                    Найти
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="bg-white pb-16">
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Изображения о походе -->
+                <div class="relative mr-16">
+                    <div class="relative overflow-hidden w-[280px] h-[280px]">
+                        <img src="./assets/img1.jpeg"
+                             alt="Горы" class="rounded-lg shadow-lg w-auto w-full h-full object-cover">
+                    </div>
+                    <div class="absolute bottom-[-100px] left-[80px] w-[280px] h-[280px] overflow-hidden">
+                        <img src="./assets/img2.jpeg"
+                             alt="Домик в горах"
+                             class="w-full h-full object-cover rounded-lg shadow-lg">
+                        <!-- Иконка воспроизведения -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white bg-opacity-60 rounded-full p-4">
+                                <svg class="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.5 5.5L13.5 10L6.5 14.5V5.5Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- О походе -->
+                <div class=" sm:mt-0 w-full md:w-1/2 mt-12">
+                    <p class="text-yellow-600 text-lg font-semibold mb-2">о нашем походе</p>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Исследуйте все горные массивы мира вместе с нами
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. 
+                        Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых 
+                        странных слов в Lorem Ipsum, "consectetur" и занялся его поисками в классической латинской литературе.
+                    </p>
+                    <a href="#" class="inline-block bg-gray-800 text-white font-medium px-6 py-3 rounded-lg shadow-lg">
+                        Программа тура
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="bg-gray-100">
+        <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
+            <!-- Программы -->
+            <div class="lg:w-1/2">
+                <p class="text-yellow-500 font-medium text-lg">наше предложение</p>
+                <h2 class="text-4xl font-bold mt-2">Лучшие программы для тебя</h2>
+                <p class="text-gray-600 mt-4">
+                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.
+                </p>
+                
+                <!-- Преимущества -->
+                <div class="mt-6 space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gray-200 p-3 rounded-lg">
+                            <img src="https://img.icons8.com/ios-filled/30/000000/shield.png" alt="guide">
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Опытный гид</h3>
+                            <p class="text-gray-600 text-sm">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gray-200 p-3 rounded-lg">
+                            <img src="https://img.icons8.com/ios-filled/30/000000/shield.png" alt="security">
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Безопасный поход</h3>
+                            <p class="text-gray-600 text-sm">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gray-200 p-3 rounded-lg">
+                            <img src="https://img.icons8.com/ios-filled/30/000000/shield.png" alt="price">
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Лояльные цены</h3>
+                            <p class="text-gray-600 text-sm">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Кнопка -->
+                <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-lg font-semibold">
+                    Стоимость программ
+                </button>
+            </div>
+    
+            <!-- Блок с изображениями -->
+
+            <div class="grid grid-cols-2 gap-4 p-4">
+                <img src="./assets/img3.jpeg" class="w-full h-64 object-cover rounded-lg" alt="Image 1">
+                <img src="./assets/img4.jpeg" class="w-full h-64 object-cover rounded-lg" alt="Image 2">
+                <img src="./assets/img5.jpeg" class="w-full h-64 object-cover rounded-lg" alt="Image 3">
+                <img src="./assets/img6.jpeg" class="w-full h-64 object-cover rounded-lg" alt="Image 4">
+              </div>
+        </section>
+    </div>
+
+    
+    <div class="bg-white flex items-center justify-center min-h-screen">
+
+        <div class="text-center">
+            <p class="text-yellow-600 font-medium">по версии отдыхающих</p>
+            <h2 class="text-2xl font-bold text-gray-900">Популярные направления</h2>
+    
+            <div class="flex gap-6 mt-6">
+                <!-- Карточка1 отзывы -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-[300px] h-[380px] object-cover" src="./assets/img7.jpeg" alt="Озеро возле гор">
+                    <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg shadow-md flex items-center text-sm font-semibold">
+                        ⭐ 4.9
+                    </div>
+                    <div class="absolute bottom-0 w-full bg-black bg-opacity-40 text-white p-4">
+                        <h3 class="font-bold">Озеро возле гор</h3>
+                        <p class="text-sm">романтическое приключение</p>
+                        <span class="float-right bg-gray-700 px-2 py-1 rounded text-sm">480 $</span>
+                    </div>
+                </div>
+    
+                <!-- Карточка2 отзывы -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-[300px] h-[380px] object-cover" src="./assets/img8.jpeg" alt="Ночь в горах">
+                    <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg shadow-md flex items-center text-sm font-semibold">
+                        ⭐ 4.5
+                    </div>
+                    <div class="absolute bottom-0 w-full bg-black bg-opacity-40 text-white p-4">
+                        <h3 class="font-bold">Ночь в горах</h3>
+                        <p class="text-sm">в компании друзей</p>
+                        <span class="float-right bg-gray-700 px-2 py-1 rounded text-sm">500 $</span>
+                    </div>
+                </div>
+    
+                <!-- Карточка3 отзывы -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-[300px] h-[380px] object-cover" src="./assets/img9.jpeg" alt="Йога в горах">
+                    <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg shadow-md flex items-center text-sm font-semibold">
+                        ⭐ 5.0
+                    </div>
+                    <div class="absolute bottom-0 w-full bg-black bg-opacity-40 text-white p-4">
+                        <h3 class="font-bold">Йога в горах</h3>
+                        <p class="text-sm">для тех, кто заботится о себе</p>
+                        <span class="float-right bg-gray-700 px-2 py-1 rounded text-sm">230 $</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Кнопка -->
+            <button class="mt-6 bg-gray-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-gray-700">
+                Рейтинг направлений
+            </button>
+        </div>
+    </div>
+
+
+    <div class="bg-gray-100">
+    
+    <div class="max-w-6xl mx-auto py-10">
+        
+        <div class="text-center">
+            <p class="text-yellow-500 uppercase">делимся впечатлениями</p>
+            <h1 class="text-3xl font-bold mt-2">Блог о путешествиях</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            
+            <!-- Карточка1 статья -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden">
+                <img class="w-1/3 object-cover" src="./assets/img10.jpeg" alt="Италия">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-black-600">
+                        <a href="#">Красивая Италия, какая она в реальности?</a>
+                    </h2>
+                    <p class="text-gray-600 mt-2">Для современного мира базовый вектор развития предполагает независимые способы реализации...</p>
+                    <div class="flex justify-between items-center mt-4 text-sm">
+                        <span class="text-yellow-500">01/04/2023</span>
+                        <a href="#" class="text-gray-700 font-semibold">читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка2 статья -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden">
+                <img class="w-1/3 object-cover" src="./assets/img11.jpeg" alt="Самолет">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-black-600">
+                        <a href="#">Долой сомнения! Весь мир открыт для вас!</a>
+                    </h2>
+                    <p class="text-gray-600 mt-2">Для современного мира базовый вектор развития предполагает независимые способы реализации...</p>
+                    <div class="flex justify-between items-center mt-4 text-sm">
+                        <span class="text-yellow-500">01/04/2023</span>
+                        <a href="#" class="text-gray-700 font-semibold">читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка3 статья -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden">
+                <img class="w-1/3 object-cover" src="./assets/img12.jpeg" alt="Путешествие">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-black-600">
+                        <a href="#">Как подготовиться к путешествию в одиночку?</a>
+                    </h2>
+                    <p class="text-gray-600 mt-2">Для современного мира базовый вектор развития предполагает.</p>
+                    <div class="flex justify-between items-center mt-4 text-sm">
+                        <span class="text-yellow-500">01/04/2023</span>
+                        <a href="#" class="text-gray-700 font-semibold">читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка4 статья -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden">
+                <img class="w-1/3 object-cover" src="./assets/img13.jpeg" alt="Индия">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-black-600">
+                        <a href="#">Индия ... летим?</a>
+                    </h2>
+                    <p class="text-gray-600 mt-2">Для современного мира базовый.</p>
+                    <div class="flex justify-between items-center mt-4 text-sm">
+                        <span class="text-yellow-500">01/04/2023</span>
+                        <a href="#" class="text-gray-700 font-semibold">читать статью</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Кнопка -->
+        <div class="flex justify-center mt-8">
+            <button class="bg-gray-800 text-white px-6 py-2 rounded-lg">
+                Другие материалы
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="bg-white flex flex-col items-center justify-center py-10">
+
+    <!-- Заголовок -->
+    <div class="text-center mb-8">
+        <p class="text-yellow-600 text-lg font-medium">фото-отчет</p>
+        <h1 class="text-3xl font-bold text-gray-900 mt-2">Делимся впечатлениями</h1>
+    </div>
+
+    <!-- Сетка изображений -->
+    
+    <div class="grid grid-cols-4 gap-4 p-4 max-w-6xl mx-auto">
+        <!-- Первый ряд -->
+        <img class="col-span-2 w-full h-full object-cover rounded-lg" src="./assets/img14.jpeg" alt="Image 1">
+        <img class="col-span-1 w-full h-full object-cover rounded-lg" src="./assets/img15.jpeg" alt="Image 2">
+        <img class="col-span-1 w-full h-full object-cover rounded-lg" src="./assets/img16.jpeg" alt="Image 3">
+        
+        <!-- Второй ряд -->
+        <img class="col-span-1 w-full h-full object-cover rounded-lg" src="./assets/img17.jpeg" alt="Image 4">
+        <img class="col-span-2 w-full h-full object-cover rounded-lg" src="./assets/img18.jpeg" alt="Image 5">
+        <img class="col-span-1 w-full h-full object-cover rounded-lg" src="./assets/img19.jpeg" alt="Image 6">
+    </div>
+
+    <!-- Кнопка -->
+    <button class="mt-8 px-6 py-3 bg-gray-800 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none">
+        Наш Pinterest
+    </button>
+</div>
+
+
+
+<div class="bg-white">
+
+    <!-- Подписки -->
+    <div class="flex justify-center py-12 relative top-[150px]">
+        <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-3xl">
+            <p class="text-yellow-600 text-sm font-semibold">актуально</p>
+            <h2 class="text-2xl font-bold text-gray-900 mt-1">
+                Получайте полезные рассылки о путешествиях
+            </h2>
+
+            <div class="mt-4 flex flex-col md:flex-row md:items-center gap-4">
+                <input type="email"
+                       class="p-3 border rounded-md w-full border-gray-300"
+                       placeholder="name@domain.com">
+                <button class="bg-gray-800 text-white px-5 py-3 rounded-md">
+                    Подписаться на новости
+                </button>
+            </div>
+            <p class="text-gray-500 text-sm mt-2">
+                подписываясь на новости, вы автоматически соглашаетесь с
+                <a href="#" class="text-gray-800 underline">условиями обработки персональных данных</a>
+                и <a href="#" class="text-gray-800 underline">правилами рекламных рассылок</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-white pt-40 py-12">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <!-- О компании -->
+            <div>
+                <h3 class="text-lg font-semibold">Компания «РумТибет»</h3>
+                <p class="text-gray-400 text-sm mt-2">
+                    Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+                    то есть более двух тысячелетий назад. Ричард МакКлинток, профессор 
+                    латыни из колледжа Hampden-Sydney.
+                </p>
+            </div>
+
+            <!-- Услуги -->
+            <div>
+                <h3 class="text-lg font-semibold">Наши услуги</h3>
+                <ul class="mt-2 space-y-2 text-gray-400 text-sm">
+                    <li>
+                        <a href="#" class="text-gray-400 hover:underline">
+                            Посещение храмов в горах
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:underline">Походы в джунглях Амазонии</a>
+                        <span class="ml-2 bg-gray-700 text-white text-xs px-2 py-1 rounded">new</span>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Поездка в Африку</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Важно -->
+            <div>
+                <h3 class="text-lg font-semibold">Важно для путешествий</h3>
+                <ul class="mt-2 space-y-2 text-gray-400 text-sm">
+                    <li>
+                        <a href="#" class="hover:underline">Как собрать в долгий поход?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Если вы врач - загляните сюда</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
